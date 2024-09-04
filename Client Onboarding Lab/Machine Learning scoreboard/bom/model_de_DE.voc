@@ -1,0 +1,26 @@
+
+# usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Input
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Input#concept.label = ML-Modelleingabe
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Input.Input(java.lang.Integer)#phrase.navigation = ein neuer {ML-Modelleingabe} wobei {0, clientindustry} 
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Input.clientindustry#phrase.action = setze das clientindustry von {this} auf {clientindustry}
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Input.clientindustry#phrase.addition_setter = füge {clientindustry} zu das clientindustry von {this} hinzu
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Input.clientindustry#phrase.navigation = {clientindustry} von {this}
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Input.clientindustry#phrase.subtraction_setter = ziehe {clientindustry} von das clientindustry von {this} ab
+
+# usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Output
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Output#concept.label = ML-Modellausgabe
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Output.Output(java.lang.String,java.lang.Double,java.lang.Double,int)#phrase.navigation = ein neuer {ML-Modellausgabe} wobei {0, predicted clientdefaultedpayment} {1, confidence} {2, weight} {3, rank} 
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Output.confidence#phrase.action = setze das confidence von {this} auf {confidence}
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Output.confidence#phrase.addition_setter = füge {confidence} zu das confidence von {this} hinzu
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Output.confidence#phrase.navigation = {confidence} von {this}
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Output.confidence#phrase.subtraction_setter = ziehe {confidence} von das confidence von {this} ab
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Output.predictedClientdefaultedpayment#phrase.action = setze das predicted clientdefaultedpayment von {this} auf {predicted clientdefaultedpayment}
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Output.predictedClientdefaultedpayment#phrase.navigation = {predicted clientdefaultedpayment} von {this}
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Output.rank#phrase.action = setze das rank von {this} auf {rank}
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Output.rank#phrase.addition_setter = füge {rank} zu das rank von {this} hinzu
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Output.rank#phrase.navigation = {rank} von {this}
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Output.rank#phrase.subtraction_setter = ziehe {rank} von das rank von {this} ab
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Output.weight#phrase.action = setze das weight von {this} auf {weight}
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Output.weight#phrase.addition_setter = füge {weight} zu das weight von {this} hinzu
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Output.weight#phrase.navigation = {weight} von {this}
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Output.weight#phrase.subtraction_setter = ziehe {weight} von das weight von {this} ab

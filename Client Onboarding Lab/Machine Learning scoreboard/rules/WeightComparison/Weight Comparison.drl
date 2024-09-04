@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Weight Comparison</name>
+  <uuid>603ece24-6408-4881-8d08-27321d73d2ce</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[definitions
+	set 'ml current output' to a ML model output in 'Weighted sum prediction' ;
+if
+	decision is undefined
+	or the weight of 'ml current output' is more than the weight of decision 
+then
+	set decision to 'ml current output' ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

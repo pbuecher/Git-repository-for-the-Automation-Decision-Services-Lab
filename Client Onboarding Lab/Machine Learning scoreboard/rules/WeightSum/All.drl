@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>All</name>
+  <uuid>3bc82733-d814-4d67-ab05-a4c45d44850c</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[definitions
+	set 'label' to a string in { "FALSE" , "TRUE" } ;
+	set 'All' to Prediction 
+		where the predicted clientdefaultedpayment of each ML model output is label ;
+	set 'number of predictions' to the number of elements in Prediction ;
+if
+	'number of predictions' is more than 0 
+then
+	add a new ML model output where
+		the predicted clientdefaultedpayment is label , 
+		the confidence is the sum of the confidences of All / 'number of predictions' , 
+		the weight is the sum of the weights of All , 
+		the rank is 0 to decision ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

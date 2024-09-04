@@ -1,0 +1,26 @@
+
+# usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Input
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Input#concept.label = Entrada do modelo ML
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Input.Input(java.lang.Integer)#phrase.navigation = um novo {Entrada do modelo ML} no qual {0, clientindustry} 
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Input.clientindustry#phrase.action = atribuir o clientindustry {this,PARTITIVE_ARTICLE} a {clientindustry}
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Input.clientindustry#phrase.addition_setter = adicionar {clientindustry} ao clientindustry {this,PARTITIVE_ARTICLE}
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Input.clientindustry#phrase.navigation = {clientindustry} {this,PARTITIVE_ARTICLE}
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Input.clientindustry#phrase.subtraction_setter = subtrair {clientindustry} do clientindustry {this,PARTITIVE_ARTICLE}
+
+# usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Output
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Output#concept.label = Saída do modelo ML
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Output.Output(java.lang.String,java.lang.Double,java.lang.Double,int)#phrase.navigation = um novo {Saída do modelo ML} no qual {0, predicted clientdefaultedpayment} {1, confidence} {2, weight} {3, rank} 
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Output.confidence#phrase.action = atribuir o confidence {this,PARTITIVE_ARTICLE} a {confidence}
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Output.confidence#phrase.addition_setter = adicionar {confidence} ao confidence {this,PARTITIVE_ARTICLE}
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Output.confidence#phrase.navigation = {confidence} {this,PARTITIVE_ARTICLE}
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Output.confidence#phrase.subtraction_setter = subtrair {confidence} do confidence {this,PARTITIVE_ARTICLE}
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Output.predictedClientdefaultedpayment#phrase.action = atribuir o predicted clientdefaultedpayment {this,PARTITIVE_ARTICLE} a {predicted clientdefaultedpayment}
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Output.predictedClientdefaultedpayment#phrase.navigation = {predicted clientdefaultedpayment} {this,PARTITIVE_ARTICLE}
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Output.rank#phrase.action = atribuir o rank {this,PARTITIVE_ARTICLE} a {rank}
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Output.rank#phrase.addition_setter = adicionar {rank} ao rank {this,PARTITIVE_ARTICLE}
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Output.rank#phrase.navigation = {rank} {this,PARTITIVE_ARTICLE}
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Output.rank#phrase.subtraction_setter = subtrair {rank} do rank {this,PARTITIVE_ARTICLE}
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Output.weight#phrase.action = atribuir o weight {this,PARTITIVE_ARTICLE} a {weight}
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Output.weight#phrase.addition_setter = adicionar {weight} ao weight {this,PARTITIVE_ARTICLE}
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Output.weight#phrase.navigation = {weight} {this,PARTITIVE_ARTICLE}
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Output.weight#phrase.subtraction_setter = subtrair {weight} do weight {this,PARTITIVE_ARTICLE}

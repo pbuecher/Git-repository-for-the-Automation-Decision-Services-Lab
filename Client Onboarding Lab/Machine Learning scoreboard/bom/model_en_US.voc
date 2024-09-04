@@ -1,0 +1,26 @@
+
+# usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Input
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Input#concept.label = ML model input
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Input.Input(java.lang.Integer)#phrase.navigation = a new {ML model input} where {0, clientindustry} 
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Input.clientindustry#phrase.action = set the clientindustry of {this} to {clientindustry}
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Input.clientindustry#phrase.addition_setter = add {clientindustry} to the clientindustry of {this}
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Input.clientindustry#phrase.navigation = {clientindustry} of {this}
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Input.clientindustry#phrase.subtraction_setter = subtract {clientindustry} from the clientindustry of {this}
+
+# usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Output
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Output#concept.label = ML model output
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Output.Output(java.lang.String,java.lang.Double,java.lang.Double,int)#phrase.navigation = a new {ML model output} where {0, predicted clientdefaultedpayment} {1, confidence} {2, weight} {3, rank} 
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Output.confidence#phrase.action = set the confidence of {this} to {confidence}
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Output.confidence#phrase.addition_setter = add {confidence} to the confidence of {this}
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Output.confidence#phrase.navigation = {confidence} of {this}
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Output.confidence#phrase.subtraction_setter = subtract {confidence} from the confidence of {this}
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Output.predictedClientdefaultedpayment#phrase.action = set the predicted clientdefaultedpayment of {this} to {predicted clientdefaultedpayment}
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Output.predictedClientdefaultedpayment#phrase.navigation = {predicted clientdefaultedpayment} of {this}
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Output.rank#phrase.action = set the rank of {this} to {rank}
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Output.rank#phrase.addition_setter = add {rank} to the rank of {this}
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Output.rank#phrase.navigation = {rank} of {this}
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Output.rank#phrase.subtraction_setter = subtract {rank} from the rank of {this}
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Output.weight#phrase.action = set the weight of {this} to {weight}
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Output.weight#phrase.addition_setter = add {weight} to the weight of {this}
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Output.weight#phrase.navigation = {weight} of {this}
+usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Output.weight#phrase.subtraction_setter = subtract {weight} from the weight of {this}

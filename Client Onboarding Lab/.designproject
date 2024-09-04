@@ -1,0 +1,1 @@
+{"description":"List additional services and calculate associated fees based on client information provided during onboarding. Perform a client risk assessment.","groupId":"usr001.usr001_client_onboarding_decision.client_onboarding_lab","locale":"en_US","properties":{"tags":[],"refactoringEnabled":false}}

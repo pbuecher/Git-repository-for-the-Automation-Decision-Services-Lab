@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>set industry input</name>
+  <uuid>cc8ec2ad-bf2b-4b82-b1b0-90d7b05d3e1c</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[set decision to a new ML model input where
+		the clientindustry is 0 ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

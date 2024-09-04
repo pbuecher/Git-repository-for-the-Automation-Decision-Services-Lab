@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>35</name>
+  <uuid>822a894f-4c4c-4139-9d72-cb89de32b151</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if
+	the Annual Revenue of ClientInformation is more than 11941837 
+	and the Company Age of ClientInformation is more than 14 
+then
+	add a new ML model output where
+		the predicted clientdefaultedpayment is "FALSE" , 
+		the confidence is 0.9988569251285959 , 
+		the weight is 0.9988569251285959 , 
+		the rank is 36 to decision ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

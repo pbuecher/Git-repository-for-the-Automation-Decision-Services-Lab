@@ -1,0 +1,51 @@
+{
+  "fields" : [ {
+    "name" : "predicted_clientDefaultedPayment",
+    "type" : "string",
+    "nullable" : true,
+    "fieldMapping" : {
+      "name" : "",
+      "type" : "",
+      "expression" : "",
+      "collection" : false,
+      "values" : { },
+      "variables" : [ ]
+    }
+  }, {
+    "name" : "confidence",
+    "type" : "real",
+    "nullable" : true,
+    "fieldMapping" : {
+      "name" : "",
+      "type" : "",
+      "expression" : "",
+      "collection" : false,
+      "values" : { },
+      "variables" : [ ]
+    }
+  }, {
+    "name" : "weight",
+    "type" : "real",
+    "nullable" : true,
+    "fieldMapping" : {
+      "name" : "",
+      "type" : "",
+      "expression" : "",
+      "collection" : false,
+      "values" : { },
+      "variables" : [ ]
+    }
+  }, {
+    "name" : "rank",
+    "type" : "integer",
+    "nullable" : false,
+    "fieldMapping" : {
+      "name" : "",
+      "type" : "",
+      "expression" : "",
+      "collection" : false,
+      "values" : { },
+      "variables" : [ ]
+    }
+  } ]
+}

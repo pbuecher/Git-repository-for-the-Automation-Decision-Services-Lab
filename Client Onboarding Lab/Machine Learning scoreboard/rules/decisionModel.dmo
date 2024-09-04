@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionmodel:DecisionModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore">
+  <name>Machine Learning scorecard</name>
+  <uuid>27a64cbc-e221-4d19-92d9-ee760dc86936</uuid>
+  <locale>en_US</locale>
+  <definition><definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="Decisions" name="machineLearningScorecard" namespace="">
+    <extensionElements>
+        <locale xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" id="en_US"/>
+    </extensionElements>
+    <inputData id="input" name="Industry">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="Industry" collection="false" name="Industry"/>
+            </initialization>
+        </extensionElements>
+        <variable id="input_ii" name="Industry" typeRef="Industry"/>
+    </inputData>
+    <decision id="input-mapping" name="Input mapping">
+        <description>ML model input</description>
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="Industry" collection="false" name="Industry"/>
+                <output bomType="usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Input" collection="false" name="Input mapping"/>
+                <rule defaultRule="false" href="input-mapping/set%20industry%20input.drl" kind="BusinessRule" name="set industry input"/>
+                <rule defaultRule="false" href="input-mapping/set%20industry.dmt" kind="DecisionTable" name="set industry"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="input_mapping_ii" name="Input mapping" typeRef="usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Input"/>
+        <informationRequirement>
+            <requiredInput href="#input"/>
+        </informationRequirement>
+    </decision>
+    <decision id="output-mapping" name="Output mapping">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Output" collection="false" name="Weight Comparison"/>
+                <output bomType="Scoreboard" collection="false" name="Output mapping"/>
+                <rule defaultRule="false" href="output-mapping/get%20machine%20learning%20output.drl" kind="BusinessRule" name="get machine learning output"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="output_mapping_ii" name="Output mapping" typeRef="Scoreboard"/>
+        <informationRequirement>
+            <requiredInput href="#WeightComparison"/>
+        </informationRequirement>
+    </decision>
+    <inputData id="input_data_0" name="ClientInformation">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="ClientInformation" collection="false" name="ClientInformation"/>
+            </initialization>
+        </extensionElements>
+        <variable id="input_data_0_ii" name="ClientInformation" typeRef="ClientInformation"/>
+    </inputData>
+    <decision id="Prediction" name="Prediction">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="collect">
+                <input bomType="ClientInformation" collection="false" name="ClientInformation"/>
+                <input bomType="usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Input" collection="false" name="Input mapping"/>
+                <output bomType="usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Output" collection="true" name="Prediction"/>
+                <rule defaultRule="false" href="Prediction/0.drl" kind="BusinessRule" name="0"/>
+                <rule defaultRule="false" href="Prediction/1.drl" kind="BusinessRule" name="1"/>
+                <rule defaultRule="false" href="Prediction/2.drl" kind="BusinessRule" name="2"/>
+                <rule defaultRule="false" href="Prediction/3.drl" kind="BusinessRule" name="3"/>
+                <rule defaultRule="false" href="Prediction/4.drl" kind="BusinessRule" name="4"/>
+                <rule defaultRule="false" href="Prediction/5.drl" kind="BusinessRule" name="5"/>
+                <rule defaultRule="false" href="Prediction/6.drl" kind="BusinessRule" name="6"/>
+                <rule defaultRule="false" href="Prediction/7.drl" kind="BusinessRule" name="7"/>
+                <rule defaultRule="false" href="Prediction/8.drl" kind="BusinessRule" name="8"/>
+                <rule defaultRule="false" href="Prediction/9.drl" kind="BusinessRule" name="9"/>
+                <rule defaultRule="false" href="Prediction/10.drl" kind="BusinessRule" name="10"/>
+                <rule defaultRule="false" href="Prediction/11.drl" kind="BusinessRule" name="11"/>
+                <rule defaultRule="false" href="Prediction/12.drl" kind="BusinessRule" name="12"/>
+                <rule defaultRule="false" href="Prediction/13.drl" kind="BusinessRule" name="13"/>
+                <rule defaultRule="false" href="Prediction/14.drl" kind="BusinessRule" name="14"/>
+                <rule defaultRule="false" href="Prediction/15.drl" kind="BusinessRule" name="15"/>
+                <rule defaultRule="false" href="Prediction/16.drl" kind="BusinessRule" name="16"/>
+                <rule defaultRule="false" href="Prediction/17.drl" kind="BusinessRule" name="17"/>
+                <rule defaultRule="false" href="Prediction/18.drl" kind="BusinessRule" name="18"/>
+                <rule defaultRule="false" href="Prediction/19.drl" kind="BusinessRule" name="19"/>
+                <rule defaultRule="false" href="Prediction/20.drl" kind="BusinessRule" name="20"/>
+                <rule defaultRule="false" href="Prediction/21.drl" kind="BusinessRule" name="21"/>
+                <rule defaultRule="false" href="Prediction/22.drl" kind="BusinessRule" name="22"/>
+                <rule defaultRule="false" href="Prediction/23.drl" kind="BusinessRule" name="23"/>
+                <rule defaultRule="false" href="Prediction/24.drl" kind="BusinessRule" name="24"/>
+                <rule defaultRule="false" href="Prediction/25.drl" kind="BusinessRule" name="25"/>
+                <rule defaultRule="false" href="Prediction/26.drl" kind="BusinessRule" name="26"/>
+                <rule defaultRule="false" href="Prediction/27.drl" kind="BusinessRule" name="27"/>
+                <rule defaultRule="false" href="Prediction/28.drl" kind="BusinessRule" name="28"/>
+                <rule defaultRule="false" href="Prediction/29.drl" kind="BusinessRule" name="29"/>
+                <rule defaultRule="false" href="Prediction/30.drl" kind="BusinessRule" name="30"/>
+                <rule defaultRule="false" href="Prediction/31.drl" kind="BusinessRule" name="31"/>
+                <rule defaultRule="false" href="Prediction/32.drl" kind="BusinessRule" name="32"/>
+                <rule defaultRule="false" href="Prediction/33.drl" kind="BusinessRule" name="33"/>
+                <rule defaultRule="false" href="Prediction/34.drl" kind="BusinessRule" name="34"/>
+                <rule defaultRule="false" href="Prediction/35.drl" kind="BusinessRule" name="35"/>
+                <rule defaultRule="false" href="Prediction/36.drl" kind="BusinessRule" name="36"/>
+                <rule defaultRule="false" href="Prediction/37.drl" kind="BusinessRule" name="37"/>
+                <rule defaultRule="false" href="Prediction/38.drl" kind="BusinessRule" name="38"/>
+                <rule defaultRule="false" href="Prediction/39.drl" kind="BusinessRule" name="39"/>
+                <rule defaultRule="false" href="Prediction/40.drl" kind="BusinessRule" name="40"/>
+                <rule defaultRule="true" href="Prediction/default-rule.drl" kind="BusinessRule" name="default-rule"/>
+            </ruleset>
+            <properties xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <property name="ads.designer.predictionInvocation"><![CDATA[true]]></property>
+            </properties>
+        </extensionElements>
+        <variable id="prediction_ii" name="Prediction" typeRef="usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Output[]"/>
+        <informationRequirement>
+            <requiredInput href="#input_data_0"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#input-mapping"/>
+        </informationRequirement>
+    </decision>
+    <decision id="WeightComparison" name="Weight Comparison">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Output" collection="true" name="Weighted sum prediction"/>
+                <output bomType="usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Output" collection="false" name="Weight Comparison"/>
+                <rule defaultRule="false" href="WeightComparison/Weight%20Comparison.drl" kind="BusinessRule" name="Weight Comparison"/>
+            </ruleset>
+            <properties xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <property name="ads.designer.predictionInvocation"><![CDATA[true]]></property>
+            </properties>
+        </extensionElements>
+        <variable id="weightComparison_ii" name="Weight Comparison" typeRef="usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Output"/>
+        <informationRequirement>
+            <requiredInput href="#WeightSum"/>
+        </informationRequirement>
+    </decision>
+    <decision id="WeightSum" name="Weighted sum prediction">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="collect">
+                <input bomType="usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Output" collection="true" name="Prediction"/>
+                <output bomType="usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Output" collection="true" name="Weighted sum prediction"/>
+                <rule defaultRule="false" href="WeightSum/All.drl" kind="BusinessRule" name="All"/>
+                <rule defaultRule="true" href="WeightSum/default-rule.drl" kind="BusinessRule" name="default-rule"/>
+            </ruleset>
+            <properties xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <property name="ads.designer.predictionInvocation"><![CDATA[true]]></property>
+            </properties>
+        </extensionElements>
+        <variable id="weightSum_ii" name="Weighted sum prediction" typeRef="usr001.usr001_client_onboarding_decision.client_onboarding_lab.machinelearningscorecard.Output[]"/>
+        <informationRequirement>
+            <requiredInput href="#Prediction"/>
+        </informationRequirement>
+    </decision>
+</definitions>
+</definition>
+</com.ibm.rules.studio.model.decisionmodel:DecisionModel>

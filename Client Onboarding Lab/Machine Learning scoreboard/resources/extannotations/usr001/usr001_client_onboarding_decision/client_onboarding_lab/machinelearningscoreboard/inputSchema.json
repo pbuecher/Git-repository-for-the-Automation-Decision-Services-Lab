@@ -1,0 +1,60 @@
+{
+  "fields" : [ {
+    "name" : "clientAnnualRevenue",
+    "type" : "integer",
+    "nullable" : true,
+    "fieldMapping" : {
+      "name" : "",
+      "type" : "java.lang.Long",
+      "expression" : "the Annual Revenue of ClientInformation",
+      "collection" : false,
+      "values" : { },
+      "variables" : [ {
+        "name" : "ClientInformation",
+        "type" : "ClientInformation"
+      } ]
+    }
+  }, {
+    "name" : "clientExistenceDuration",
+    "type" : "integer",
+    "nullable" : true,
+    "fieldMapping" : {
+      "name" : "",
+      "type" : "java.lang.Long",
+      "expression" : "the Company Age of ClientInformation",
+      "collection" : false,
+      "values" : { },
+      "variables" : [ {
+        "name" : "ClientInformation",
+        "type" : "ClientInformation"
+      } ]
+    }
+  }, {
+    "name" : "clientIndustry",
+    "type" : "integer",
+    "nullable" : true,
+    "fieldMapping" : {
+      "name" : "",
+      "type" : "",
+      "expression" : "",
+      "collection" : false,
+      "values" : { },
+      "variables" : [ ]
+    }
+  }, {
+    "name" : "clientEmployeeNumber",
+    "type" : "integer",
+    "nullable" : true,
+    "fieldMapping" : {
+      "name" : "",
+      "type" : "java.lang.Long",
+      "expression" : "the Number of Employees of ClientInformation",
+      "collection" : false,
+      "values" : { },
+      "variables" : [ {
+        "name" : "ClientInformation",
+        "type" : "ClientInformation"
+      } ]
+    }
+  } ]
+}
